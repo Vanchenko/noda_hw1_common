@@ -4,7 +4,6 @@ const { nanoid } = require('nanoid');
 
 const contactsPath = path.join(__dirname,'db','contacts.json');
 
-//  console.log('My file:',contactsPath);
 const getAllContacts = async () => {
    // Читает из db все данные. Парсит и возвращает полный список контактов.
     const data = await fs.readFile(contactsPath);

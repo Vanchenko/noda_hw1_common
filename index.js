@@ -11,9 +11,6 @@ program
 program.parse();
 const options = program.opts();
 
-//console.log('options',options);
-//console.log('process',program.opts);
-
 const invokeAction = async ({ action, id, name, email, phone }) => {
   console.log(action);
   switch (action) {
